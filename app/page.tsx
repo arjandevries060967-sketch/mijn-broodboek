@@ -75,25 +75,6 @@ export default function App() {
           />
           <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.55)" }} />
         </div>
-        <div className="relative z-50 flex items-center justify-between px-6 pt-3 pb-0 pointer-events-none select-none">
-          <span className="text-[13px] font-semibold text-stone-200 tabular-nums">9:41</span>
-          <div className="flex items-center gap-1.5">
-            <div className="flex items-end gap-px">
-              {[3, 5, 7, 9].map((h, i) => (
-                <div key={i} className={`w-1 rounded-sm ${i < 3 ? "bg-stone-200" : "bg-stone-300"}`} style={{ height: h }} />
-              ))}
-            </div>
-            <svg viewBox="0 0 16 12" className="w-4 h-3 fill-stone-700">
-              <path d="M8 9.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM8 6.5a5 5 0 013.54 1.46l-1.41 1.42a3 3 0 00-4.26 0L4.46 7.96A5 5 0 018 6.5zM8 3a8 8 0 015.66 2.34l-1.42 1.42a6 6 0 00-8.48 0L2.34 5.34A8 8 0 018 3z"/>
-            </svg>
-            <div className="flex items-center gap-px">
-              <div className="w-6 h-3 rounded-sm border border-stone-300 flex items-center px-px">
-                <div className="bg-stone-200 h-2 rounded-sm w-4/5" />
-              </div>
-              <div className="w-px h-1.5 bg-stone-200 rounded-r-sm" />
-            </div>
-          </div>
-        </div>
         {content}
       </div>
     </div>
@@ -121,26 +102,6 @@ export default function App() {
             style={{ filter: "blur(2px) brightness(0.28) saturate(0.7)" }}
           />
           <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.55)" }} />
-        </div>
-
-        <div className="relative z-50 flex items-center justify-between px-6 pt-3 pb-0 pointer-events-none select-none">
-          <span className="text-[13px] font-semibold text-stone-200 tabular-nums">9:41</span>
-          <div className="flex items-center gap-1.5">
-            <div className="flex items-end gap-px">
-              {[3, 5, 7, 9].map((h, i) => (
-                <div key={i} className={`w-1 rounded-sm ${i < 3 ? "bg-stone-200" : "bg-stone-300"}`} style={{ height: h }} />
-              ))}
-            </div>
-            <svg viewBox="0 0 16 12" className="w-4 h-3 fill-stone-700">
-              <path d="M8 9.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM8 6.5a5 5 0 013.54 1.46l-1.41 1.42a3 3 0 00-4.26 0L4.46 7.96A5 5 0 018 6.5zM8 3a8 8 0 015.66 2.34l-1.42 1.42a6 6 0 00-8.48 0L2.34 5.34A8 8 0 018 3z"/>
-            </svg>
-            <div className="flex items-center gap-px">
-              <div className="w-6 h-3 rounded-sm border border-stone-300 flex items-center px-px">
-                <div className="bg-stone-200 h-2 rounded-sm w-4/5" />
-              </div>
-              <div className="w-px h-1.5 bg-stone-200 rounded-r-sm" />
-            </div>
-          </div>
         </div>
 
         <div className="relative z-10 flex-1 flex flex-col overflow-hidden min-h-0 rounded-none">
