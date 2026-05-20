@@ -54,23 +54,27 @@ export default function PricingScreen() {
     <div className="flex flex-col h-full relative">
 
       {/* Header */}
-      <div className="relative overflow-hidden px-5 pt-14 pb-5 flex flex-col items-center text-center shrink-0">
+      <div className="relative overflow-hidden px-5 pt-8 pb-3 shrink-0">
         <div className="absolute inset-0 pointer-events-none">
           <Image src={HEADER_PHOTO} alt="" fill className="object-cover object-center" priority />
           <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.58)" }} />
         </div>
-        <div className="relative flex flex-col items-center w-full">
-          <div
-            className="w-14 h-14 rounded-2xl flex items-center justify-center mb-3 shadow-xl shadow-amber-900/60"
-            style={{ background: "linear-gradient(135deg, #f59e0b 0%, #b45309 100%)" }}
-          >
-            <svg viewBox="0 0 24 24" fill="white" className="w-7 h-7">
-              <path d="M2.394 13.742l2.954-10.722A.5.5 0 015.83 2.72l3.55 3.227 2.225-4.45A.5.5 0 0112 1.25a.5.5 0 01.394.247l2.226 4.45 3.55-3.227a.5.5 0 01.484-.1.5.5 0 01.347.4l2.953 10.722a.5.5 0 01-.481.626H2.875a.5.5 0 01-.48-.626zM21 17a1 1 0 010 2H3a1 1 0 010-2h18zm-2 4a1 1 0 010 2H5a1 1 0 010-2h14z"/>
-            </svg>
+        <div className="relative">
+          <div className="flex items-center gap-3 mb-2.5">
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 shadow-lg shadow-amber-900/60"
+              style={{ background: "linear-gradient(135deg, #f59e0b 0%, #b45309 100%)" }}
+            >
+              <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5">
+                <path d="M2.394 13.742l2.954-10.722A.5.5 0 015.83 2.72l3.55 3.227 2.225-4.45A.5.5 0 0112 1.25a.5.5 0 01.394.247l2.226 4.45 3.55-3.227a.5.5 0 01.484-.1.5.5 0 01.347.4l2.953 10.722a.5.5 0 01-.481.626H2.875a.5.5 0 01-.48-.626zM21 17a1 1 0 010 2H3a1 1 0 010-2h18zm-2 4a1 1 0 010 2H5a1 1 0 010-2h14z"/>
+              </svg>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-white leading-tight">Mijn Broodboek Pro</h1>
+              <p className="text-xs text-stone-400 mt-0.5">Word een echte meesterbakker</p>
+            </div>
           </div>
-          <h1 className="text-xl font-bold text-white">Mijn Broodboek Pro</h1>
-          <p className="text-sm text-stone-400 mt-0.5">Word een echte meesterbakker</p>
-          <div className="glass-btn rounded-2xl p-1 flex gap-1 mt-4 w-full max-w-xs">
+          <div className="glass-btn rounded-2xl p-1 flex gap-1">
             {(["maandelijks", "jaarlijks"] as Plan[]).map((p) => (
               <button
                 key={p}
@@ -81,11 +85,9 @@ export default function PricingScreen() {
               >
                 {p === "maandelijks" ? "Maandelijks" : "Jaarlijks"}
                 {p === "jaarlijks" && (
-                  <span
-                    className={`rounded-full px-1.5 py-0.5 text-[9px] font-bold uppercase ${
-                      billingPlan === "jaarlijks" ? "bg-amber-500 text-white" : "bg-amber-500/20 text-amber-400"
-                    }`}
-                  >
+                  <span className={`rounded-full px-1.5 py-0.5 text-[9px] font-bold uppercase ${
+                    billingPlan === "jaarlijks" ? "bg-amber-500 text-white" : "bg-amber-500/20 text-amber-400"
+                  }`}>
                     -33%
                   </span>
                 )}
