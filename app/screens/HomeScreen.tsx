@@ -11,11 +11,11 @@ const HEADER_PHOTO =
   "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=800&q=85";
 
 // Nav bar: always this exact height, never changes (prevents feedback loop)
-const NAV_H = 108;
+const NAV_H = 72;
 // Extra hero strip that scrolls away below the nav bar
-const HERO_H = 148;
+const HERO_H = 108;
 // Scroll distance over which the transition completes
-const FADE_RANGE = HERO_H - NAV_H; // 40px
+const FADE_RANGE = HERO_H - NAV_H; // 36px
 
 interface Props {
   recipes: Recipe[];
@@ -150,17 +150,17 @@ export default function HomeScreen({ recipes, loading, onRecipe, onNew, onProfil
           }}
         />
         {/* Single row: text left + buttons right */}
-        <div className="relative flex items-end gap-3 px-4 pb-3">
+        <div className="relative flex items-center gap-3 px-4 pb-2">
           <div className="flex-1 min-w-0">
-            <p ref={subtitleRef}
-              className="text-[8px] font-semibold uppercase tracking-widest leading-none mb-0.5"
-              style={{ color: "rgba(255,255,255,0.60)" }}>
-              Welkom terug
-            </p>
-            <h1 className="text-[15px] font-bold text-white leading-tight truncate"
+            <h1 className="text-xl font-bold text-white leading-tight truncate"
               style={{ textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}>
               Mijn Broodboek
             </h1>
+            <p ref={subtitleRef}
+              className="text-xs font-medium leading-none mt-0.5"
+              style={{ color: "rgba(255,255,255,0.65)" }}>
+              Welkom terug
+            </p>
           </div>
           <HeaderButtons onSearch={() => setSearchOpen(true)} onNew={onNew} onProfile={onProfile} />
         </div>
@@ -179,14 +179,6 @@ export default function HomeScreen({ recipes, loading, onRecipe, onNew, onProfil
             fill
             className="object-cover object-top"
             priority
-          />
-          {/* Subtle bottom fade into page background */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to bottom, transparent 60%, #160e06 100%)",
-            }}
           />
         </div>
 
