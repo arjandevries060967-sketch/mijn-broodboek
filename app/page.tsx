@@ -71,9 +71,9 @@ export default function App() {
             src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=60"
             alt=""
             className="w-full h-full object-cover object-center"
-            style={{ filter: "blur(2px) brightness(0.28) saturate(0.7)" }}
+            style={{ filter: "blur(2px) brightness(0.52) saturate(0.9)" }}
           />
-          <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.55)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.28)" }} />
         </div>
         {content}
       </div>
@@ -99,9 +99,9 @@ export default function App() {
             src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=60"
             alt=""
             className="w-full h-full object-cover object-center"
-            style={{ filter: "blur(2px) brightness(0.28) saturate(0.7)" }}
+            style={{ filter: "blur(2px) brightness(0.52) saturate(0.9)" }}
           />
-          <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.55)" }} />
+          <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.28)" }} />
         </div>
 
         <div className="relative z-10 flex-1 flex flex-col overflow-hidden min-h-0 rounded-none">
