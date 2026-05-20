@@ -200,7 +200,7 @@ export default function NewRecipeScreen({ userId, userName, onSaved }: Props) {
   return (
     <div className="flex flex-col h-full relative">
       {/* Header */}
-      <div className="relative overflow-hidden px-5 pt-14 pb-4 sticky top-0 z-10">
+      <div className="relative overflow-hidden px-5 pt-8 pb-3 sticky top-0 z-10">
         <div className="absolute inset-0 pointer-events-none">
           <Image src={HEADER_PHOTO} alt="" fill className="object-cover object-center" priority />
           <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.58)" }} />
@@ -208,7 +208,7 @@ export default function NewRecipeScreen({ userId, userName, onSaved }: Props) {
         <div className="relative">
           <h1 className="text-2xl font-bold text-white">Nieuw recept</h1>
           <p className="text-sm text-stone-400 mt-0.5">Voeg een nieuw broodrecept toe</p>
-          <div className="flex gap-2 mt-4">
+          <div className="flex gap-2 mt-2">
             {STEPS.map((step, i) => (
               <button
                 key={i}

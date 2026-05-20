@@ -32,7 +32,7 @@ export default function DiscoverScreen({ recipes, onRecipe, savedIds, onSave }: 
 
   return (
     <div className="flex flex-col h-full relative">
-      <div className="relative overflow-hidden px-5 pt-14 pb-4 sticky top-0 z-10">
+      <div className="relative overflow-hidden px-5 pt-8 pb-3 sticky top-0 z-10">
         <div className="absolute inset-0 pointer-events-none">
           <Image src={HEADER_PHOTO} alt="" fill className="object-cover object-center" priority />
           <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.58)" }} />
@@ -41,7 +41,7 @@ export default function DiscoverScreen({ recipes, onRecipe, savedIds, onSave }: 
           <h1 className="text-2xl font-bold text-white">Ontdekken</h1>
           <p className="text-sm text-stone-400 mt-0.5">Recepten van de community</p>
 
-          <div className="flex gap-2 mt-4">
+          <div className="flex gap-2 mt-2">
             <div className="relative flex-1">
               <div className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400">
                 <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">

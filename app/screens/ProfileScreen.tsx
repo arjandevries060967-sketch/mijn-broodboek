@@ -52,13 +52,13 @@ export default function ProfileScreen({ recipes, userId, onRecipe, savedIds, onS
   return (
     <div className="flex flex-col h-full relative">
       {/* Header */}
-      <div className="relative overflow-hidden px-5 pt-14 pb-5 sticky top-0 z-10">
+      <div className="relative overflow-hidden px-5 pt-8 pb-3 sticky top-0 z-10">
         <div className="absolute inset-0 pointer-events-none">
           <Image src={HEADER_PHOTO} alt="" fill className="object-cover object-center" priority />
           <div className="absolute inset-0" style={{ background: "rgba(14,8,2,0.58)" }} />
         </div>
         <div className="relative">
-        <div className="flex items-center gap-4 mb-4">
+        <div className="flex items-center gap-3 mb-2.5">
           <div className="relative">
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-900/60">
               <span className="text-white font-bold text-2xl">A</span>
@@ -82,7 +82,7 @@ export default function ProfileScreen({ recipes, userId, onRecipe, savedIds, onS
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-2 mb-4">
+        <div className="grid grid-cols-3 gap-2 mb-2.5">
           {stats.map((s) => (
             <div key={s.label} className="glass rounded-2xl p-3 text-center">
               <p className="text-xl font-bold text-stone-800">{s.value}</p>
