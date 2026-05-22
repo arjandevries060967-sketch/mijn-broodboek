@@ -1,3 +1,4 @@
+// Test from VS Code - Mijn Broodboek
 "use client";
 
 import { useState, useEffect } from "react";
@@ -105,6 +106,12 @@ export default function App() {
         </div>
 
         <div className="relative z-10 flex-1 flex flex-col overflow-hidden min-h-0 rounded-none">
+          <div
+            className="flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium text-amber-900 shrink-0"
+            style={{ background: "#fef3c7", borderBottom: "1px solid #fbbf24" }}
+          >
+            ⚠️ Dit is een demo-versie van Mijn Broodboek
+          </div>
           {selectedRecipe ? (
             <RecipeDetailScreen
               recipe={selectedRecipe}
